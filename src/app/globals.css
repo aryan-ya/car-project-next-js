@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS style  next js */
+
+/* date range selection */
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrStartRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrEndRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrSelected ~ .rdrDayNumber span::after {
+    background-color: #fff !important;
+
+
+    
+}
+
+
+
+
+
+.rdrDayToday .rdrDayNumber span:after {
+    background: #ed1d24 !important;
+}
+
+.rdrMonthAndYearPickers {
+    font-size: 16px;
+}
+
+.rdrDayNumber,
+.rdrWeekDay {
+    color: #1e1f23 !important;
+    font-weight: 500 !important;
+}
+
+/* Tailwind CSS */
+@layer base {
+    body {
+        background-color: #f7f7f7; /* Example color, replace with your background color */
+    }
+
+    p {
+        color: #6b7280; /* Example color, replace with your text color */
+    }
+
+    .h1 {
+        font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind */
+        line-height: 1.1111; /* Equivalent to xl:leading-72px in Tailwind */
+        font-weight: 800; /* Equivalent to font-extrabold in Tailwind */
+        margin-bottom: 1.125rem; /* Equivalent to mb-[18px] in Tailwind */
+      
+    }
+
+    .h2 {
+        font-size: 2.25rem; /* Equivalent to text-4xl in Tailwind */
+        font-weight: 700; /* Equivalent to font-bold in Tailwind */
+        margin-bottom: 1.5rem; /* Equivalent to mb-6 in Tailwind */
+    }
+
+    .h3 {
+        font-size: 1.25rem; /* Equivalent to text-xl in Tailwind */
+        font-weight: 600; /* Equivalent to font-semibold in Tailwind */
+        margin-bottom: 1rem; /* Equivalent to mb-4 in Tailwind */
+    }
+
+    .description {
+        font-size: 1rem; /* Equivalent to text-base in Tailwind */
+        line-height: 1.5; /* Equivalent to xl:leading-8 in Tailwind */
+    }
+
+    .section {
+        padding-top: 3.75rem; /* Equivalent to pt-[60px] in Tailwind */
+        padding-top: 7.5rem; /* Equivalent to xl:pt-[120px] in Tailwind */
+        height: 100vh;
+        width: 100%;
+    }
+
+    .btn {
+        border-radius: 0.625rem; /* Equivalent to rounded-[10px] in Tailwind */
+        width: 100%;
+        text-transform: uppercase; /* Equivalent to uppercase in Tailwind */
+        font-weight: 500; /* Equivalent to font-medium in Tailwind */
+        color: #fff; /* Example color, replace with your text color */
+        letter-spacing: 0.0625rem; /* Equivalent to tracking-[2px] in Tailwind */
+        font-size: 0.8125rem; /* Equivalent to text-[13px] in Tailwind */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease; /* Equivalent to transition-all duration-300 in Tailwind */
+    }
+
+    .btn-sm {
+        height: 3.5rem; /* Equivalent to h-14 in Tailwind */
+    }
+
+    .btn-lg {
+        height: 3rem; /* Equivalent to h-16 in Tailwind */
+    }
+
+    .btn-cta {
+        background-color: #1e1f23 ; /* Example color, replace with your background color */
+        height: 3.375rem; /* Equivalent to h-[54px] in Tailwind */
+        border-radius: 0.3125rem; /* Equivalent to rounded-[5px] in Tailwind */
+        padding: 0.625rem; /* Equivalent to px-4 in Tailwind */
+    }
+
+    .btn-primary {
+        background-color: #ed1d24; /* Example color, replace with your background color */
+    }
+
+    .btn-accent {
+        color: #fff; /* Example color, replace with your text color */
+        background-color: #ed1d24; /* Example color, replace with your background color */
+    }
+
+    .active {
+        color: #ed1d24; /* Example color, replace with your text color */
+    }
+}
