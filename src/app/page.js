@@ -24,7 +24,7 @@ export default function Home() {
    <Cta />
    <Footer /> 
    <BackToBtn />
-<div className="h-[4000px]"></div>
+{/*  */}
     </main>
   );
 }

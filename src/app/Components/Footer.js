@@ -8,7 +8,7 @@ import {Link} from 'react-scroll';
 import { FaPhone, FaEnvelope } from 'react-icons/fa6'
 
 //component
-// import Copyright from './Copyright'
+import Copyright from './Copyright'
 
 //motion
 
@@ -21,7 +21,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-   <footer className='pt-20 bg-white z-20'>
+   <footer id='contact' className='pt-20 bg-white z-20'>
     <motion.div 
     
     variants={fadeIn('up',0.2)}
@@ -46,14 +46,62 @@ export default function Footer() {
              </div>
             <div  className='flex items-center gap-x-[10px]'>
               <FaEnvelope />
-              Email</div>
+           
+           <div className='font-medium'>office@carland.com</div>
+           </div>
           </div>
           </div>  
-          <div className="">2</div>
-          <div>3</div>
-          <div>4</div>
+          {/* links */}
+          <div className="flex-1 flex flex-col xl:items-center">
+
+            <div><h3 className='h3 font-bold mb-8'>Company</h3>
+              <ul>
+              <li><a href="">New York</a></li>
+              <li><a href="">Carrier</a></li>
+              <li><a href="">Mobiles</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">How we Work</a></li>
+
+            
+              </ul>
+            
+            
+            </div>
+          </div>
+          <div className='flex-1'>
+            <h3 className='h3 font-bold mb-8'>Working Hours</h3>
+            <div className='flex flex-col gap-y-4'>
+            <div className='flex gap-x-2'>
+              <div className='text-secondary'>Mon-Fri:</div>
+              <div className='font-semibold'>09:00AM - 09:00PM</div>
+            </div>
+            <div className='flex gap-x-2'>
+              <div className='text-secondary'>Sat:</div>
+              <div className='font-semibold'>09:00AM - 07:00PM</div>
+            </div>
+            <div className='flex gap-x-2'>
+              <div className='text-secondary'>Sun:</div>
+              <div className='font-semibold'>Closed</div>
+
+              </div>
+            </div>
+          </div>
+          <div className='flex-1'>
+            <h3 className='h3 font-bold mb-8'>NewsLetter</h3>
+          <div>
+            Lorem ipsum dolor sit amet consectetur.
+
+
+          </div>
+          <form className='flex gap-x-2 h-14' action="">
+            <input type="text" placeholder='your email' className='outline-none bg-white h-full border rounded-lg pl-4 focus:border-accent' />
+            <button type='submit' className='btn btn-sm btn-accent w-20'>Submit</button>
+          </form>
+          </div>
        </div>
     </motion.div>
+    <Copyright />
    </footer>
+
   )
 }
