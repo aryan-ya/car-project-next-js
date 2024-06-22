@@ -28,8 +28,7 @@ module.exports = {
           hover : '#dd242a'
         },
         body:'#dedede',
-      }, 
-      // image
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

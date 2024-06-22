@@ -43,7 +43,16 @@ export default function TestimonalSlider() {
   return (
 
     // testimonial slider car next js slider next js
-    <div>
+    <motion.div
+    variants={fadeIn('up',0.4)}
+    initial= 'hidden'
+    whileInView={'show'}
+    viewport={{once: false , amount: 0.6}}
+    className="container mx-auto"
+  
+    
+    
+    >
 {/* car next js testimonial slider next js */}
       <Swiper pagination={{
         clickable: true,
@@ -71,6 +80,6 @@ export default function TestimonalSlider() {
           </SwiperSlide>;
         })}
       </Swiper>
-    </div>
+    </motion.div>
   )
 }

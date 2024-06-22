@@ -22,7 +22,7 @@ export default function Home() {
    <Testimonial />
    
    <Cta />
-   <Footer/> 
+   <Footer /> 
    <BackToBtn />
 <div className="h-[4000px]"></div>
     </main>
